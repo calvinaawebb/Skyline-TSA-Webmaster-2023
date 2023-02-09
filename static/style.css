@@ -19,7 +19,7 @@ h1 {
 
 @keyframes spread{
     0% {
-        letter-spacing: -0.5em;
+        letter-spacing: 0.0em;
         opacity: 0.0;
     }
     50% {
