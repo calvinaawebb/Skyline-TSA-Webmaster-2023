@@ -1,28 +1,29 @@
 /*If the css doesnt update, use shift + ctrl + r on the website, it resets the browser cache which is utterly fucking stupid*/
 body {
-  background-color: #0d1117;
-  background-image: url("stars.jpeg");
+  background-image: url("stars.jpg");
+  background-size: cover;
   margin: 0;
 }
 h1 {
   font-weight: 700; /*What does this do? Nothing?*/
   text-align: center;
   font-size: 5em;
-  font-family: "Impact", sans-serif;
+  font-family: Consolas, monaco, monospace;
   color: lightgrey;
   animation-name: spread;
-  animation-duration: 1.5s;
-  letter-spacing: 0.1em;
+  animation-duration: 1.7s;
+  letter-spacing: 0.15em;
   opacity: 1.0;
+  text-weight: 900;
 }
 
 @keyframes spread{
     0% {
-        letter-spacing: 0em;
+        letter-spacing: -0.5em;
         opacity: 0.0;
     }
     50% {
-        letter-spacing: 0.1em;
+        letter-spacing: 0.15em;
     }
     100% {
         opacity: 1.0;
@@ -32,11 +33,12 @@ h1 {
 
 
 h2 {
-  font-family: arial, sans-serif;
+  font-family: Consolas, monaco, monospace;
   color: #9e9e9e;
   text-align: center;
   animation-name: pullup;
-  animation-duration: 1.5s;
+  animation-duration: 1.8s;
+  text-weight: 600;
 }
 
 
@@ -45,7 +47,7 @@ h2 {
         margin-top: 5%;
         opacity: 0;
     }
-    40%{
+    45%{
         margin-top: 5%;
         opacity: 0;
     }
@@ -78,13 +80,13 @@ h5 {
 
 .navbar {
   left: -10px; /*I don't think this is doing anything right now*/
-  padding-left: 5px;
+  padding-left: 1%;
   background-color: #120d44;
   position: sticky; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   /*right: 0*/
   align: center;
-  width: 3000px; /* Full width */
+  width: 99%; /* Full width */
   float: bottom;
 }
 
@@ -93,7 +95,7 @@ h5 {
   float: left;
   display: inline-block;
   color: white;
-  font-family: Impact,Arial,Verdana,sans-serif;
+  font-family: Consolas, monaco, monospace;
   font-size: 1.2em;
   text-align: center;
   padding: 31px 28px;
@@ -140,7 +142,7 @@ h5 {
   background-image: url("space.png");
   background-position-y: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 120%;
   margin: 0;
   padding: 0;
   top: 0;
