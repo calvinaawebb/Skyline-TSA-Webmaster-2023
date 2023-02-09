@@ -1,16 +1,60 @@
 /*If the css doesnt update, use shift + ctrl + r on the website, it resets the browser cache which is utterly fucking stupid*/
 body {
   background-color: #0d1117;
+  background-image: url("stars.jpeg");
   margin: 0;
 }
 h1 {
-  font-weight: 700;
-  color: darkorchid;
+  font-weight: 700; /*What does this do? Nothing?*/
+  text-align: center;
+  font-size: 5em;
+  font-family: "Impact", sans-serif;
+  color: lightgrey;
+  animation-name: spread;
+  animation-duration: 1.5s;
+  letter-spacing: 0.1em;
+  opacity: 1.0;
 }
+
+@keyframes spread{
+    0% {
+        letter-spacing: 0em;
+        opacity: 0.0;
+    }
+    50% {
+        letter-spacing: 0.1em;
+    }
+    100% {
+        opacity: 1.0;
+    }
+
+}
+
+
 h2 {
-  font-weight: 700;
-  color: darkorchid;
+  font-family: arial, sans-serif;
+  color: #9e9e9e;
+  text-align: center;
+  animation-name: pullup;
+  animation-duration: 1.5s;
 }
+
+
+@keyframes pullup{
+    0%{
+        margin-top: 5%;
+        opacity: 0;
+    }
+    40%{
+        margin-top: 5%;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 0%;
+        opacity: 1.0;
+    }
+}
+
 h3 {
   font-weight: 700;
   color: darkorchid;
@@ -33,7 +77,8 @@ h5 {
 }
 
 .navbar {
-  left: -10px;
+  left: -10px; /*I don't think this is doing anything right now*/
+  padding-left: 5px;
   background-color: #120d44;
   position: sticky; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
@@ -48,7 +93,8 @@ h5 {
   float: left;
   display: inline-block;
   color: white;
-  font: D-DIN-Bold,Arial,Verdana,sans-serif;
+  font-family: Impact,Arial,Verdana,sans-serif;
+  font-size: 1.2em;
   text-align: center;
   padding: 31px 28px;
   text-decoration: none;
@@ -57,7 +103,7 @@ h5 {
 
 /* Change background on mouse-over */
 .navbar a:hover {
-  font-size:18px;
+  font-size:1.4em;
   color: grey;
 }
 
@@ -118,7 +164,12 @@ h5 {
 /* Main content */
 .main {
   margin-top: auto; /* Add a top margin to avoid content overlay */
-  margin-left: 250px;*/
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+  position: absolute;
+  padding-top: 10%;
+  padding-bottom: 15%;
 }
 .navbar img {
   float: left;
