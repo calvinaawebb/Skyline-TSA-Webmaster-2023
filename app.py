@@ -9,11 +9,15 @@ app = Flask(__name__)
 def main_page():
     return render_template("home.html")
 @app.route('/pricing')
+def pricing():
+    return render_template("pricing.html")
+@app.route('/vehicles')
+def vehicles():
+    return render_template("vehicles.html")
+@app.route('/about')
 def about():
     return render_template("about.html")
-@app.route('/vehicles')
-def support():
-    return render_template("vehicles.html")
+
 @app.route("/forward/", methods=['POST'])
 def move_forward():
     #Moving forward code
