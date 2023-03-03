@@ -5,7 +5,7 @@
     <link rel="shortcut icon" href="static/oie_transparent.png"/>
 
   </head>
-  <body>
+  <body> 
   <div class="navbar">
     <a href="/" style="padding: 12px 5px;"><img src="static/oie_transparent.png" alt="My Logo" style="width: 75px; height: auto"></a>
     <a href="/pricing"><div class="hover-underline-animation">Pricing</div></a>
@@ -19,7 +19,16 @@
 
     </div>
   </div>
-  <div class = "fixed-bg1"><p class="quotestyle">This is a test</p></div>
+  <div class = "fixed-bg1">
+    <div class="grid">
+      <div class="left"><p class="quotestyle">This is a not test<br>put content here!</p></div>
+      <div class="right">
+        <div id="threejs-container">
+          <canvas id="threejs-canvas"></canvas>
+        </div>
+      </div>
+    </div>    
+  </div>
   <div class = "body2">
     <p class="hover-underline-animation">Some text some text some text some text..<br> this is a test to see what is <br>happening with this stupidly old shit</p>
     <form action="/forward/" method="post">
@@ -46,5 +55,7 @@
     <p>Some text some text some text some text..<br> this is a test to see what is <br>happening with this stupidly old shit</p>
     <p>Some text some text some text some text..<br> this is a test to see what is <br>happening with this stupidly old shit</p>
   </button>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> -->
+  <script type="module" src="{{ url_for('static', filename='my_script.js') }}"></script>
   </body>
 </html>

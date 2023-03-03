@@ -3,6 +3,7 @@ body {
   background-image: url("stars.jpg");
   background-size: 100%;
   margin: 0;
+  z-index: 0;
 }
 h1 {
   font-weight: 700; /*What does this do? Nothing?...*/
@@ -159,6 +160,7 @@ h5 {
   margin: 0;
   padding: 0;
   top: 0;
+
 }
 
 .fixed-bg1 {
@@ -173,8 +175,39 @@ h5 {
   background-size: cover;
   margin: 0;
   padding: 0;
+  position: relative;
   top: 0;
+  z-index: -2;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+.left {
+  background-color: #000000;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+#threejs-container {
+  width: 100%;
+  height: 100%;
+}
+
+#threejs-canvas {
+  width: 100%;
+  height: 100%;
+}
+
 
 /* Main content */
 .main {
